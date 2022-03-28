@@ -1,7 +1,8 @@
-cmake_minimum_required (VERSION 3.14)
+cmake_minimum_required (VERSION 3.5)
 project(tim-vx LANGUAGES C CXX)
 
-OPTION(TIM_VX_ENABLE_TEST               "Build the unit test"                   ON)
+set(BUILD_SHARED_LIBS OFF)
+OPTION(TIM_VX_ENABLE_TEST               "Build the unit test"                   OFF)
 OPTION(TIM_VX_ENABLE_LAYOUT_INFER       "Enable layout inference support"       ON)
 OPTION(TIM_VX_CODE_COVERAGE             "Run code coverage with gconv(gcc only" OFF)
 OPTION(TIM_VX_USE_EXTERNAL_OVXLIB       "Use external OVXLIB"                   OFF)
